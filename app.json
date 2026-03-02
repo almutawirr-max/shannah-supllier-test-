@@ -1,0 +1,64 @@
+{
+  "expo": {
+    "owner": "shnah",
+    "name": "shannah-supplier",
+    "slug": "shannah-supplier",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon-new.png",
+    "scheme": "shannahsupplier",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.shnah.supplier",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false,
+        "UIViewSemanticContentAttribute": "ForceRightToLeft"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#881ED3",
+        "foregroundImage": "./assets/images/adaptive-icon-new.png"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "package": "com.shnah.supplier",
+      "softwareKeyboardLayoutMode": "resize"
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/favicon.png",
+      "build": {
+        "babel": {
+          "include": ["@ui-kitten/components"]
+        }
+      },
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon-new.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#881ED3"
+        }
+      ],
+      "expo-secure-store"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "9c2a2e5c-bbc2-416a-90e4-bd8679dcd07a"
+      }
+    }
+  }
+}
